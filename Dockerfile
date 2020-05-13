@@ -9,7 +9,7 @@ RUN apt-get install -y tzdata
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 RUN apt-get install -y lsb-release build-essential cmake wget software-properties-common git zlib1g zlib1g-dev curl
-RUN apt-get install -y libtinfo5 libtinfo-dev libxml2 libxml2-dev zip unzip
+RUN apt-get install -y libtinfo5 libtinfo-dev libxml2 libxml2-dev zip unzip gcovr
 RUN wget https://apt.llvm.org/llvm.sh
 RUN chmod +x llvm.sh
 
